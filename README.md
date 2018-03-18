@@ -51,8 +51,8 @@ Par exemple, vous pouvez déclencher votre action depuis la pièce Salon pour qu
 A noter que si vous ne précisez pas la pièce, le client courant est utilisé, par exemple, Salon pour Salon ou Cuisine pour Cuisine.
 
 Les minuteurs et les alarmes sont gérés indépendamments les uns des autres, vous pouvez donc en lancer autant qu'il vous plaira et ca sur tous les clients Avatar de votre installation.<BR>
-Si vous voulez intérrompre un minuteur avant son exécution, Avatar vous les ennumerera et vous demandera lequel supprimer.<BR>
-Pour les alarmes, vous pouvez utiliser la règle de suppression des programmes du plugin `scenariz`.
+Si vous voulez intérrompre un minuteur avant son exécution et il y en a plusieurs, Avatar vous les ennumerera et vous demandera lequel supprimer. Si il n'y en a qu'un seul, Avatar le supprimera directement.<BR>
+Pour supprimer une alarme, vous pouvez utiliser la règle de suppression des programmes du plugin `scenariz`.
 
 Vous pouvez aussi définir des minuteurs pour des choses précises:
 - `Démarre un minuteur pour des frites`
@@ -78,7 +78,7 @@ La configuration du plugin se fait dans le fichier `Avatar-Serveur/plugins/timer
 Cette propriété permet de ne pas ajouter la règle dictée dans le fichier XML de grammaire Microsoft Speech Engines du client Avatar même si la variable globale `addToLocalGrammar` du client est à `true`.<BR>
 En général, les plugins qui n'ont pas de règles fixes, comme celui-ci, permettent, par définition, un grand nombre de règles et les ajouter toutes dans le fichier de grammaires aurait pour résultat d'avoir un grand nombre de faux positifs.<BR>
 Pour ce plugin, laissez cette variable à `true`.
-
+<BR>
 #### Propriété "nlpPosition"
 Cette propriété est faite pour éviter les conflits entre les plugins lorsque ceux-ci peuvent avoir les mêmes termes dans leurs règles.<BR>
 Pour plus de précision, voir la documentation au paragraphe "Réordonner l'ordre des plugins pour NLP".<BR>
@@ -88,7 +88,7 @@ Pour ce plugin, laissez cette variable à `3`.
 Ce plugin prend la place du plugin `time` dans l'ordre du Traitement Naturel du Langage.<BR>
 La propriété `nlpPosition` du plugin `time` est modifié à `5` avec la mise à jour 0.1.8 du Serveur Avatar.<BR>
 
-
+<BR>
 #### Propriété "addspeech"
 Valable uniquement pour les minuteurs.<BR>
 Cette propriété permet d'ajouter une phrase lorsque le temps défini pour le minuteur est écoulé et **après** la musique programmée. Si `addspeech=true`, Avatar dira ensuite: "Minuteur de **....** terminé".
@@ -97,20 +97,20 @@ Valeurs possibles:
 - addspeech : true,
 - addspeech : false,
 
-
+<BR>
 #### Propriété "default_sound"
 Valable uniquement pour les minuteurs.<BR>
 Cette propriété définie le son par défaut lorsque aucun son n'est défini pour un type de minuteur.<BR>
 Par défaut, "rencontre_du_troisieme_type.mp3" 
 
-
+<BR>
 #### Propriété "lexic"
-valable uniquement pour les alarmes programmées.<BR>
+Valable uniquement pour les alarmes programmées.<BR>
 Cette propriété permet de donner un nom aux alarmes en fonction de leurs types dans la base de programmes du plugin scenariz.<BR>
 
 Si aucune valeur n'est trouvée pour le type, le nom par défaut est: "un programme".
  
-
+<BR>
 #### Propriété "sound"
 Cette propriété permet de configurer les musiques associées aux types d'alarmes.<BR>
 
