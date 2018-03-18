@@ -8,7 +8,7 @@ Il permet de déclencher une action lorsque le temps défini est écoulé (pour 
 ![GitHub Logo](/logo/timer.jpg)
 
 Ce minuteur est un démonstrateur du potentiel d'Avatar en multiroom et en Traitement Naturel du Langage.<BR>
-Si vous dites:<BR>
+**Si vous dites:**<BR>
 - `Démarre un minuteur de 1 minute 20 secondes`<BR>
 Avatar analyse la phrase et crée un scénario de relations:
 - **La phrase**: 	`start a timer of 1 minute 20 seconds`
@@ -20,7 +20,7 @@ Avatar analyse la phrase et crée un scénario de relations:
 	- `${ACTION}` un `${OBJET}` de `${WHEN}`<BR>
 Le plugin assigne alors une action avec le résultat. Pour cet exemple, un minuteur de 1 minute et 20 secondes.
 
-Autre exemple, si vous dites:<BR>
+**Autre exemple, si vous dites:**<BR>
 - `Réveille-moi demain à 7h45` (Aujourd'hui Dimanche 18 Mars)<BR>
 Avatar analyse la phrase et crée un scénario de relations:
 - **La phrase**: 	`wake up tomorrow at 7:45`
@@ -31,7 +31,7 @@ Avatar analyse la phrase et crée un scénario de relations:
 	- `${ACTION}` le `${WHEN}`<BR>
 Le plugin assigne alors une action avec le résultat. Pour cet exemple, le déclenchement d'une musique le lendemain à 7h45.
 
-Autre exemple avec un jour et une heure, si vous dites:<BR>
+**Autre exemple avec un jour et une heure, si vous dites:**<BR>
 - `Réveille-moi Lundi à 7h45` (Aujourd'hui Dimanche 18 Mars)<BR>
 Avatar analyse la phrase et crée un scénario en relation:
 - **La phrase**: 	`wake me up Monday at 7:45`
@@ -62,7 +62,7 @@ Vous pouvez aussi définir des minuteurs pour des choses précises:
 Ce plugin est aussi parfaitement intégré avec un système de son Sonos System en utilisant le plugin [SonosPlayer](https://github.com/Spikharpax/Avatar-Plugin-SonosPlayer).
 
 **A noter:**
-- Ce plugin permet de créer des alarmes qui peuvent faire office de réveil matin mais vous pouvez réaliser des programations (et des réveils) nettement plus élaborées avec le plugin `scenariz` seul.
+- Ce plugin permet de créer des alarmes qui peuvent faire office de réveil matin pour un seul jour donné mais vous pouvez aussi réaliser des programations (et des réveils) nettement plus élaborées et répétitives avec le plugin [Scenariz](https://github.com/Spikharpax/Avatar-Plugin-scenariz).
 
 <BR>
 
