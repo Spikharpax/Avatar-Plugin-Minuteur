@@ -79,11 +79,12 @@ La configuration du plugin se fait dans le fichier `Avatar-Serveur/plugins/timer
 | **NoXMLGrammar**    | true  | Cette propriété permet de ne pas ajouter la règle dictée dans le fichier XML de grammaire Microsoft Speech Engines du client Avatar même si la variable globale `addToLocalGrammar` du client est à `true`.<BR>En général, les plugins qui n'ont pas de règles fixes, comme celui-ci, permettent, par définition, un grand nombre de règles et les ajouter toutes dans le fichier de grammaires aurait pour résultat d'avoir un grand nombre de faux positifs.<BR>Pour ce plugin, laissez cette variable à `true`.<BR>|
 | **nlpPosition**    | 3  | Cette propriété est faite pour éviter les conflits entre les plugins lorsque ceux-ci peuvent avoir les mêmes termes dans leurs règles.<BR>Pour plus de précision, voir la documentation au paragraphe "Réordonner l'ordre des plugins pour NLP".<BR>Pour ce plugin, laissez cette variable à `3`.<BR><BR>**Important:** <BR>Ce plugin prend la place du plugin `time` dans l'ordre du Traitement Naturel du Langage.<BR>La propriété `nlpPosition` du plugin `time` est modifié à `5` avec la mise à jour 0.1.8 du Serveur Avatar.<BR>|
 | **addspeech**    | true  | Valable uniquement pour les minuteurs.<BR>Cette propriété permet d'ajouter une phrase lorsque le temps défini pour le minuteur est écoulé et **après** la musique programmée. Si `addspeech=true`, Avatar dira ensuite: "Minuteur de **....** terminé".<BR>Valeurs possibles: true, false<BR>|
-| **default_sound**    | rencontre_du_troisieme_type.mp3  | Valable uniquement pour les minuteurs.<BR>Cette propriété définie le son par défaut lorsque aucun son n'est défini pour un type de minuteur.<BR>|
+| **default_sound**    | rencontre_du_troisieme_type.mp3  | Cette propriété définie le son par défaut lorsque aucun son n'est défini pour un type de minuteur ou que le répertoire défini pour les alarmes est introuvable.<BR>|
 | **lexic**    | "un programme"  | Valable uniquement pour les alarmes programmées.<BR>Cette propriété permet de donner un nom aux alarmes en fonction de leurs types dans la base de programmes du plugin scenariz.<BR>|
 
+<BR><BR>
 
-#### Propriété "sound"
+### Configuration de la musique
 Cette propriété permet de configurer les musiques associées aux types d'alarmes.<BR>
 
 
