@@ -60,6 +60,7 @@ Il est aussi parfaitement intégré avec un système de son Sonos System en util
 - Ce plugin permet de créer des alarmes qui peuvent faire office de réveil matin mais vous pouvez réaliser des programations (et des réveils) nettement plus élaborées avec le plugin `scenariz` seul.
 
 <BR>
+
 ## Installation
 - Dézippez le fichier `Avatar-Plugin-Minuteur-Master.zip` dans un répertoire temporaire
 - Copiez le répertoire `timer` dans le répertoire `Avatar-Serveur/plugins`
