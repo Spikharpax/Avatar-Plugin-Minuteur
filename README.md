@@ -157,7 +157,7 @@ Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant
 	"nom du minuteur fixe" : {
 		"time" : "HH:mm:ss",
 		"sound" : "nom du son associé",
-		"substitute: ["mot-clé possible", "mot-clé possible", "mot-clé possible"],
+		"substitute" : ["mot-clé possible", "mot-clé possible", "mot-clé possible"],
 		"speech" : "Une phrase vocalisée par Avatar après le son si la variable addspeech=true"
 	}
 }
