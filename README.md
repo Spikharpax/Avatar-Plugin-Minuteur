@@ -179,7 +179,10 @@ Vous avez pleins d'exemples déjà définis dans le fichier de propriétés.
 
 ### Les règles de minuteur
 Vous pouvez dicter des règles avec le format suivant:
-- .......**minuteur de** **XX heure XX minutes XX secondes** **_pièce_**
+- .......**[minuteur, timer]** **de** **XX heure XX minutes XX secondes** **_pièce_**
+	- Démarre un minuteur d'une heure
+	- Démarre un minuteur de 1 heure 20
+	- Démarre un minuteur de 1 heure 20 minutes
 	- Démarre un minuteur de 1 heure 20 minutes 30 secondes
 	- Tu peux démarrer un minuteur de 10 minutes s'il te plait ?
 	- Déclenche un minuteur de 50 secondes 
@@ -188,7 +191,6 @@ Vous pouvez dicter des règles avec le format suivant:
 	- Démarre un minuteur pour des frites`
 	- Déclenche un minuteur pour du riz dans la cuisine s'il te plait
 
-**A noter** que "timer** est aussi compris.
 
 ### Les règles d'alarmes
 Vous pouvez dicter des règles d'alarmes avec le format suivant:
@@ -205,6 +207,8 @@ Vous pouvez dicter des règles d'alarmes avec le format suivant:
 
 **A noter** qu'il peut arriver, suivant le jour de la semaine, que la date comprise par le traitement naturel du langage soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
 - Reveilles-moi à 6 heures mardi prochain
+
+**A noter** que "après-demain" ne fonctionne pas, dites un jour de la semaine. 
 
 Les règles d'alarmes sont créées dans la base de données du plugin `scenariz`, elles restent activent même si le serveur redémarre.
 
