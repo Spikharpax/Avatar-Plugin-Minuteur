@@ -203,7 +203,7 @@ Vous pouvez dicter des règles d'alarmes avec le format suivant:
 	- Déclenche une alarme à 20 heures lundi
 	- Tu peux déclencher une alarme mardi à 20 heures 45 s'il te plait ?
 	- Reveilles-moi à 6 heures mardi
-	- Reveilles-moi à mardi à 6 heures dans la Chambre
+	- Reveilles-moi mardi à 6 heures dans la Chambre
 		- _Si vous êtes dans le Salon..._
 
 **A noter** qu'il peut arriver, suivant le jour de la semaine, que la date comprise par le traitement naturel du langage soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
