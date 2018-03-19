@@ -157,13 +157,8 @@ Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant
 	"nom du minuteur fixe" : {
 		"time" : "HH:mm:ss",
 		"sound" : "nom du son associé",
-		"substitute: ["mot-clé possible", "mot-clé possible", "mot-clé possible",],
+		"substitute: ["mot-clé possible", "mot-clé possible", "mot-clé possible"],
 		"speech" : "Une phrase vocalisée par Avatar après le son si la variable `addspeech`=true"
-	},
-	"nom du minuteur fixe" : {
-			......
-			......
-			......
 	}
 }
 ```
@@ -179,7 +174,7 @@ Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant
 
 ### Les règles de minuteur
 Vous pouvez dicter des règles avec le format suivant:
-- .......**minuteur de** XX heure XX minutes XX secondes pièce
+- .......**minuteur de** **XX heure XX minutes XX secondes** **_pièce_**
 	- Démarre un minuteur de 1 heure 20 minutes 30 secondes
 	- Tu peux démarrer un minuteur de 10 minutes s'il te plait ?
 	- Déclenche un minuteur de 50 secondes 
@@ -192,8 +187,8 @@ Vous pouvez dicter des règles avec le format suivant:
 
 ### Les règles d'alarmes
 Vous pouvez dicter des règles d'alarmes avec le format suivant:
-- **réveil, alarme, minuteur****à** HH:mm jour de la semaine
-- **réveil, alarme, minuteur****à** jour de la semaine HH:mm pièce
+- **[réveil, alarme, minuteur]** **à** **HH:mm** **jour de la semaine** **_pièce_**
+- **[réveil, alarme, minuteur]** **à** **jour de la semaine** **HH:mm** **_pièce_**
 	- Tu peux me réveiller à 7h35 demain ?
 	- Reveilles-moi à 7h45 demain
 	- Reveilles-moi demain à 7h45
