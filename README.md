@@ -181,15 +181,18 @@ Vous avez pleins d'exemples déjà définis dans le fichier de propriétés.
 Vous pouvez dicter des règles avec le format suivant:
 - .......**[minuteur, timer]** **de** **XX heure XX minutes XX secondes** **_pièce_**
 	- Démarre un minuteur d'une heure
-	- Démarre un minuteur de 1 heure 20
+	- Démarre un minuteur d'une heure 20
 	- Démarre un minuteur de 1 heure 20 minutes
 	- Démarre un minuteur de 1 heure 20 minutes 30 secondes
 	- Tu peux démarrer un minuteur de 10 minutes s'il te plait ?
+	- Pourrais-tu sans te commander démarrer un minuteur de 10 minutes ?
 	- Déclenche un minuteur de 50 secondes 
-	- Déclenche un minuteur de 50 secondes dans le Salon
+	- Déclenche donc un minuteur de 50 secondes dans le Salon
+		- _Si vous êtes dans la cuisine..._
 - Avec des règles fixes:
 	- Démarre un minuteur pour des frites
 	- Déclenche un minuteur pour du riz dans la cuisine s'il te plait
+		- _Si vous êtes dans le Salon..._
 
 
 ### Les règles d'alarmes
