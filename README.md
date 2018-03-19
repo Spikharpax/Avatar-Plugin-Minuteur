@@ -21,7 +21,7 @@ Avatar analyse la phrase et crée un scénario de relations:
 Le plugin assigne alors une action avec le résultat. Pour cet exemple, un minuteur de 1 minute et 20 secondes.
 
 **Autre exemple, si vous dites:**<BR>
-- `Réveille-moi demain à 7h45` (Aujourd'hui Dimanche 18 Mars)<BR>
+- `Réveille-moi demain à 7h45`<BR>
 Avatar analyse la phrase et crée un scénario de relations:
 - **La phrase**: 	`wake up tomorrow at 7:45`
 - **Le scénario**: 	
@@ -32,7 +32,7 @@ Avatar analyse la phrase et crée un scénario de relations:
 Le plugin assigne alors une action avec le résultat. Pour cet exemple, le déclenchement d'une musique le lendemain à 7h45.
 
 **Autre exemple avec un jour et une heure, si vous dites:**<BR>
-- `Réveille-moi Lundi à 7h45` (Aujourd'hui Dimanche 18 Mars)<BR>
+- `Réveille-moi Lundi à 7h45`<BR>
 Avatar analyse la phrase et crée un scénario en relation:
 - **La phrase**: 	`wake me up Monday at 7:45`
 - **Le scénario**: 	
@@ -153,7 +153,7 @@ Dictez une règle et visualisez le résultat et l'Action dans la console Avatar:
 ## Configuration de minuteurs fixes
 Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant:
 ```js
-"times" {
+"times" : {
 	"nom du minuteur fixe" : {
 		"time" : "HH:mm:ss",
 		"sound" : "nom du son associé",
@@ -164,10 +164,15 @@ Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant
 ```
 **ou:**<BR>
 - "time" est obligatoire
-- "sound" est optionel, `default_sound` est utilisé si manquant.
+- "sound" est optionel
+	- `default_sound` est utilisé si manquant.
 - "substitute" est obligatoire
-- "speech" est optionel. Avatar dira `Minuteur terminé` si la variable `addspeech`=true
+	- Les termes qui peuvent être utilisés dans une règles pour ce minuteur.
+- "speech" est optionel. 
+	- Avatar dira `Minuteur terminé` si la variable `addspeech`=true
 
+Vous avez pleins d'exemples déjà définis dans le fichier de propriétés.
+<BR>
 
 ## Les règles
 3 actions par mots-clés sont possibles et définies dans le tableau "rules"
