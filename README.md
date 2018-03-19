@@ -122,7 +122,7 @@ Les alarmes peuvent avoir des sons spécifiques définis dans le tableau `sounds
 	"repertoire" : ["Action", "Action", "Action"],
 	"repertoire" : ["Action", "Action", "Action"]
 },
-```js
+```
 
 **ou**"<BR>
 répertoire" est le nom du répertoire sous le répertoire `sound` du plugin et qui est lié avec le type d'alarme défini par la relation "Action".<BR>
@@ -138,7 +138,7 @@ Si je veux avoir des musiques pour le réveil, je crée un répertoire `sound/re
 "sounds": {
 	"reveil" : ["wake up"]
 },
-```js
+```
 
 Le plugin recherchera récursivement dans **tous les répertoires sous le répertoire principal `reveil`** et une musique sera prise au hasard pour être jouée par le plugin dans la pièce qui a été définie au moment de la création de l'alarme (par défaut, la pièce où la règle a été passée si aucune pièce n'a été précisée).
 
