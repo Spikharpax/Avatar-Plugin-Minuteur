@@ -158,7 +158,7 @@ Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant
 		"time" : "HH:mm:ss",
 		"sound" : "nom du son associé",
 		"substitute: ["mot-clé possible", "mot-clé possible", "mot-clé possible"],
-		"speech" : "Une phrase vocalisée par Avatar après le son si la variable `addspeech`=true"
+		"speech" : "Une phrase vocalisée par Avatar après le son si la variable addspeech=true"
 	}
 }
 ```
@@ -189,28 +189,29 @@ Vous pouvez dicter des règles avec le format suivant:
 Vous pouvez dicter des règles d'alarmes avec le format suivant:
 - **[réveil, alarme, minuteur]** **à** **HH:mm** **jour de la semaine** **_pièce_**
 - **[réveil, alarme, minuteur]** **à** **jour de la semaine** **HH:mm** **_pièce_**
-	- Tu peux me réveiller à 7h35 demain ?
-	- Reveilles-moi à 7h45 demain
-	- Reveilles-moi demain à 7h45
+	- Tu peux me réveiller à 7 heure 35 demain ?
+	- Reveilles-moi à 7 heure 45 demain
+	- Reveilles-moi demain à 7 heures 45
+	- Déclenche une alarme à 20 heures 50 minutes
 	- Déclenche une alarme à 20 heures lundi
-	- Tu peux déclencher une alarme mardi à 20 heures s'il te plait ?
+	- Tu peux déclencher une alarme mardi à 20 heures 45 s'il te plait ?
 	- Reveilles-moi à 6 heures mardi
 	- Reveilles-moi à mardi à 6 heures dans la Chambre
 
 **A noter** qu'il peut arriver, suivant le jour de la semaine, que la date comprise par le traitement naturel du langage soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
-	- Reveilles-moi à 6 heures mardi prochain
+- Reveilles-moi à 6 heures mardi prochain
 
 Les règles d'alarmes sont créées dans la base de données du plugin `scenariz`, elles restent activent même si le serveur redémarre.
 
 ### Les règles d'arrêt d'un minuteur
 Vous pouvez arrêter un minuteur en cours avec la règle suivante:
-- "Arrete le minuteur"
+- "Arrete le minuteur"<BR>
 Si un seul minuteur est actif, Avatar l'arrete directement.<BR>
 Si plusieurs minuteurs sont actifs, Avatar rentre dans un jeu de questions/réponses:
 - Répondez après une question d'Avatar:
 	- "Oui", "Oui s'il te plait" pour stopper le minuteur
 	- "Non", "Non suivant" pour passer au suivant
-	- "Merci Sarah", "Terminé", "Annule" pour arreter la oommande
+	- "Merci Sarah", "Terminé", "Annule" pour arreter la commande
 	
 Les réponses sont dans le fichier de propriétés et dans le tableau "askme", vous pouvez les modifier ou en ajouter.
 
