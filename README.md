@@ -188,14 +188,14 @@ Vous pouvez dicter des règles avec le format suivant:
 	- Déclenche un minuteur de 50 secondes 
 	- Déclenche un minuteur de 50 secondes dans le Salon
 - Avec des règles fixes:
-	- Démarre un minuteur pour des frites`
+	- Démarre un minuteur pour des frites
 	- Déclenche un minuteur pour du riz dans la cuisine s'il te plait
 
 
 ### Les règles d'alarmes
 Vous pouvez dicter des règles d'alarmes avec le format suivant:
-- **[réveil, alarme, minuteur]** **à** **HH:mm** **jour de la semaine** **_pièce_**
-- **[réveil, alarme, minuteur]** **à** **jour de la semaine** **HH:mm** **_pièce_**
+- **[réveil, alarme, minuteur]** **à** **HH:mm** **[demain, jour de la semaine, prochain]** **_pièce_**
+- **[réveil, alarme, minuteur]** **à** **[demain, jour de la semaine, prochain]** **HH:mm** **_pièce_**
 	- Tu peux me réveiller à 7 heure 35 demain ?
 	- Reveilles-moi à 7 heure 45 demain
 	- Reveilles-moi demain à 7 heures 45
@@ -204,6 +204,7 @@ Vous pouvez dicter des règles d'alarmes avec le format suivant:
 	- Tu peux déclencher une alarme mardi à 20 heures 45 s'il te plait ?
 	- Reveilles-moi à 6 heures mardi
 	- Reveilles-moi à mardi à 6 heures dans la Chambre
+		- _Si vous êtes dans le Salon..._
 
 **A noter** qu'il peut arriver, suivant le jour de la semaine, que la date comprise par le traitement naturel du langage soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
 - Reveilles-moi à 6 heures mardi prochain
