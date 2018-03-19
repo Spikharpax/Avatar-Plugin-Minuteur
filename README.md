@@ -124,8 +124,8 @@ Les alarmes peuvent avoir des sons spécifiques définis dans le tableau `sounds
 },
 ```
 
-**ou**"<BR>
-répertoire" est le nom du répertoire sous le répertoire `sound` du plugin et qui est lié avec le type d'alarme défini par la relation "Action".<BR>
+**ou**<BR>
+"répertoire" est le nom du répertoire sous le répertoire `sound` du plugin et qui est lié avec le type d'alarme défini par la relation "Action".<BR>
 ["Action", "Action", "Action"] est le tableau associé des relations "Action".
 
 Par exemple, si vous dites:<BR>
@@ -146,13 +146,13 @@ Vous pouvez aussi créer un lien symbolique de répertoire Windows avec votre bi
 
 **Comment connaitre l'Action associé à une règle ?**<BR>
 Dictez une règle et visualisez le résultat et l'Action dans la console Avatar:
-- Dans le tableau "Relations Actions" et l'objet text
+- Dans le tableau "Relations Actions" et l'objet "text" (en fin de tableau)
 - Sur la ligne "Relation Type:"
 
 
 ## Configuration de minuteurs fixes
 Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant:
-
+```js
 "times" {
 	"nom du minuteur fixe" : {
 		"time" : "HH:mm:ss",
@@ -166,7 +166,7 @@ Les minuteurs fixes sont définis dans le tableau `times` avec le format suivant
 			......
 	}
 }
-
+```
 **ou:**<BR>
 - "time" est obligatoire
 - "sound" est optionel, `default_sound` est utilisé si manquant.
