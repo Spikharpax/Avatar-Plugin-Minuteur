@@ -1,0 +1,83 @@
+{
+	"modules" : { 
+		"timer"  : {
+			"description": "minuteur, compte à rebours",
+			"exemples": "",
+			"version": "1.0",
+			"NoXMLGrammar" : true,
+			"nlpPosition" : 3,
+			"addspeech" : true,
+			"default_sound" : "rencontre_du_troisieme_type.mp3",
+			"lexic" : {
+				"alarm" : "une alarme",
+				"wake up": "un réveil",
+				"alarm clock": "un réveil",
+				"wake": "un réveil",
+				"timer": "un minuteur",
+				"Chambre": "un réveil dans la chambre"
+			},
+			"sounds": {
+				"wakeup" : ["wake up", "wake", "alarm clock", "Chambre"],
+				"alarm" : ["timer", "alarm"]
+			},
+			"rules" : {
+				"stopTimer" : ["~stop~ * timer"],
+				"startTimer" : ["timer","alarm clock","wake up","wake * (up|next)","alarm"],
+				"stopPlay" : ["stop * ~read~"]
+			 },
+			 "askme" : {
+				"oui" : "yes",
+				"oui s'il te plaît" : "yes",
+				"non suivant" : "no",
+				"non" : "no",
+				"merci sarah" : "Sarahcancel",
+				"terminer" : "cancel",
+				"annule s'il te plait" : "cancel",
+				"annule" : "cancel"
+			 },
+			 "times" : {
+				"des oeufs durs" : {
+					"time" : "00:10:00",
+					"sound" : "rencontre_du_troisieme_type.mp3",
+					"substitute" : ["oeuf dur","oeufs durs","euh dur"],
+					"speech" : "Les oeufs durs sont prêts"
+				},
+				"des oeufs à la coque" : {
+					"time" : "00:04:00",
+					"sound" : "rencontre_du_troisieme_type.mp3",
+					"substitute" : ["oeufs à la coque","oeuf à la coque","euh à la coque"],
+					"speech" : "Les oeufs à la coque sont prêts"
+				},
+				"des oeufs mollet" : {
+					"time" : "00:05:00",
+					"sound" : "rencontre_du_troisieme_type.mp3",
+					"substitute" : ["oeufs mollets","oeuf mollet","euh mollet"],
+					"speech" : "Les oeufs mollet sont prêts"
+				},
+				"des frites" : {
+					"time" : "00:07:00",
+					"sound" : "universal.mp3",
+					"substitute" : ["frite","frites"],
+					"speech" : "Les frites sont chaudes"
+				},
+				"des pates" : {
+					"time" : "00:12:00",
+					"sound" : "universal.mp3",
+					"substitute" : ["pates","pate","pâte","pâtes"],
+					"speech" : "Les pates sont hal daineté"
+				},
+				"du riz" : {
+					"time" : "00:10:00",
+					"sound" : "rencontre_du_troisieme_type.mp3",
+					"substitute" : ["riz"],
+					"speech" : "Le riz est prêt"
+				},
+				"des pommes au four" : {
+					"time" : "00:20:00",
+					"substitute" : ["pommes au four","pomme au four"],
+					"speech" : "Les pommes au four sont bonnes à croquer"
+				}
+			 }
+		}
+	}
+}
