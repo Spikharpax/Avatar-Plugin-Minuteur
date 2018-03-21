@@ -5,7 +5,7 @@ Ce plugin est un add-on pour le framework [Avatar](https://github.com/Spikharpax
 
 Il permet de déclencher une action lorsque le temps défini est écoulé (pour un minuteur) ou arrivé (pour une alarme).
 
-![GitHub Logo](https://raw.githubusercontent.com/Spikharpax/Avatar-Plugin-Minuteur/master/logo/timer.jpg)
+![GitHub Logo](/logo/timer.jpg)
 
 Ce minuteur est un démonstrateur du potentiel d'Avatar en multiroom et en Traitement Naturel du Langage.<BR>
 **Si vous dites:**<BR>
