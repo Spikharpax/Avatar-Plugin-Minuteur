@@ -201,8 +201,8 @@ Vous pouvez dicter des règles avec le format suivant:
 
 ### Les règles d'alarmes
 Vous pouvez dicter des règles d'alarmes avec le format suivant:
-- **[réveil, alarme, minuteur]** **à** **HH:mm** **[demain, jour, date]** **[_prochain_]** **_pièce_**
-- **[réveil, alarme, minuteur]** **à** **[demain, jour, date]** **[_prochain_]** **HH:mm** **_pièce_**
+- **[réveil, alarme, minuteur]** **à** **HH:mm** **[demain, jour, date]** [_prochain_] _pièce_
+- **[réveil, alarme, minuteur]** **à** **[demain, jour, date]** [_prochain_] **HH:mm** _pièce_
 
 **Quelques exemples:**
 - Tu peux me réveiller à 7 heure 35 demain ?
