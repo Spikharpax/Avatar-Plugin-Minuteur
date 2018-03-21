@@ -43,7 +43,7 @@ Avatar analyse la phrase et crée un scénario en relation:
 	- `${ACTION}` le `${WHEN}`<BR>
 Le plugin assigne alors une action avec le résultat. Pour cet exemple, le déclenchement d'une musique le Lundi suivant (le 26) à 7h.
 
-Ce qui est intéressant à noter est que le calcul de la date n'est pas réalisé par le plugin mais par le [Traitement Naturel du Langage](https://github.com/spencermountain/compromise) qui retourne ces informations à Avatar.
+Ce qui est intéressant à noter est que le calcul de la date n'est pas réalisé par le plugin mais par le [Traitement Naturel du Langage](https://github.com/spencermountain/compromise) intégré à Avatar et qui lui retourne ces informations.
 
 Ce plugin est aussi multiroom. Vous pouvez déclencher un minuteur ou une alarme depuis une pièce pour être exécuté dans une autre pièce.
 Par exemple, vous pouvez déclencher votre action depuis la pièce Salon pour qu'elle soit exécutée dans le pièce Chambre:
