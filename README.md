@@ -221,7 +221,7 @@ Vous pouvez dicter des règles d'alarmes avec le format suivant:
 	- _Si vous êtes dans le Salon..._
 
 **A noter**:
-- La programmation se fait sur **6 jours maximum**, Avatar vous dira si vous dépassez la date maximum.
+- La programmation se fait sur **6 jours maximum**, Avatar vous dira si vous dépassez la date maximale.
 - Il peut arriver, suivant le jour de la semaine, que la date comprise soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
 	- Reveilles-moi à 6 heures mardi prochain
 - "Après-demain" ne fonctionne pas, dites une date ou un jour de la semaine. 
