@@ -31,8 +31,9 @@ Avatar analyse la phrase et crée un scénario de relations:
 	- `${ACTION}` le `${WHEN}`<BR>
 Le plugin assigne alors une action avec le résultat. Pour cet exemple, le déclenchement d'une musique le lendemain à 7h45.
 
-**Autre exemple avec un jour et une heure, si vous dites:**<BR>
-- `Réveille-moi Lundi à 7h45`<BR>
+**Autre exemple avec une date et une heure, si vous dites:**<BR>
+- `Réveille-moi Lundi 26 Mars à 7 heures`<BR>
+	- vous auriez pu dire aussi `Réveille-moi Lundi à 7 heures`<BR>
 Avatar analyse la phrase et crée un scénario en relation:
 - **La phrase**: 	`wake me up Monday at 7:45`
 - **Le scénario**: 	
@@ -40,7 +41,7 @@ Avatar analyse la phrase et crée un scénario en relation:
 	- **When:**	  `Mon Mar 19 2018 07:45:00 GMT+0100 (Paris, Madrid)`
 - **Résultat:**
 	- `${ACTION}` le `${WHEN}`<BR>
-Le plugin assigne alors une action avec le résultat. Pour cet exemple, le déclenchement d'une musique le lundi suivant à 7h45.
+Le plugin assigne alors une action avec le résultat. Pour cet exemple, le déclenchement d'une musique le lundi suivant (le 26) à 7h.
 
 Ce plugin est aussi multiroom. Vous pouvez déclencher un minuteur ou une alarme depuis une pièce pour être exécuté dans une autre pièce.
 Par exemple, vous pouvez déclencher votre action depuis la pièce Salon pour qu'elle soit exécutée dans le pièce Chambre:
@@ -180,16 +181,19 @@ Vous avez pleins d'exemples déjà définis dans le fichier de propriétés.
 ### Les règles de minuteur
 Vous pouvez dicter des règles avec le format suivant:
 - .......**[minuteur, timer]** **de** **XX heure XX minutes XX secondes** **_pièce_**
-	- Démarre un minuteur d'une heure
-	- Démarre un minuteur d'une heure 20
-	- Démarre un minuteur de 1 heure 20 minutes
-	- Démarre un minuteur de 1 heure 20 minutes 30 secondes
-	- Tu peux démarrer un minuteur de 10 minutes s'il te plait ?
-	- Pourrais-tu sans te commander démarrer un minuteur de 10 minutes ?
-	- Déclenche un minuteur de 50 secondes 
-	- Déclenche donc un minuteur de 50 secondes dans le Salon
-		- _Si vous êtes dans la cuisine..._
-- Avec des règles fixes:
+
+**Quelques exemples:**
+- Démarre un minuteur d'une heure
+- Démarre un minuteur d'une heure 20
+- Démarre un minuteur de 1 heure 20 minutes
+- Démarre un minuteur de 1 heure 20 minutes 30 secondes
+- Tu peux démarrer un minuteur de 10 minutes s'il te plait ?
+- Pourrais-tu sans te commander démarrer un minuteur de 10 minutes ?
+- Déclenche un minuteur de 50 secondes 
+- Déclenche donc un minuteur de 50 secondes dans le Salon
+	- _Si vous êtes dans la cuisine..._
+
+**Avec des règles fixes:**
 	- Démarre un minuteur pour des frites
 	- Déclenche un minuteur pour du riz dans la cuisine s'il te plait
 		- _Si vous êtes dans le Salon..._
@@ -197,22 +201,30 @@ Vous pouvez dicter des règles avec le format suivant:
 
 ### Les règles d'alarmes
 Vous pouvez dicter des règles d'alarmes avec le format suivant:
-- **[réveil, alarme, minuteur]** **à** **HH:mm** **[demain, jour de la semaine, prochain]** **_pièce_**
-- **[réveil, alarme, minuteur]** **à** **[demain, jour de la semaine, prochain]** **HH:mm** **_pièce_**
-	- Tu peux me réveiller à 7 heure 35 demain ?
-	- Reveilles-moi à 7 heure 45 demain
-	- Reveilles-moi demain à 7 heures 45
-	- Déclenche une alarme à 20 heures 50 minutes
-	- Déclenche une alarme à 20 heures lundi
-	- Tu peux déclencher une alarme mardi à 20 heures 45 s'il te plait ?
-	- Reveilles-moi à 6 heures mardi
-	- Reveilles-moi mardi à 6 heures dans la Chambre
-		- _Si vous êtes dans le Salon..._
+- **[réveil, alarme, minuteur]** **à** **HH:mm** **[demain, jour, date]** **[_prochain_]** **_pièce_**
+- **[réveil, alarme, minuteur]** **à** **[demain, jour, date]** **[_prochain_]** **HH:mm** **_pièce_**
 
-**A noter** qu'il peut arriver, suivant le jour de la semaine, que la date comprise par le traitement naturel du langage soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
+**Quelques exemples:**
+- Tu peux me réveiller à 7 heure 35 demain ?
+- Reveilles-moi à 7 heure 45 demain
+- Reveilles-moi demain à 7 heures 45
+- Déclenche une alarme à 20 heures 50
+- Déclenche une alarme à 20 heures 50 minutes
+- Démarre une alarme le 28 Mars à 20 heures 50 minutes
+- Démarre une alarme le 26 Mars à midi
+- Déclenche une alarme le lundi 26 Mars à 14 heures
+- Déclenche une alarme à 20 heures lundi
+- Tu peux déclencher une alarme mardi à 20 heures 45 s'il te plait ?
+- Reveilles-moi à 6 heures mardi
 - Reveilles-moi à 6 heures mardi prochain
+- Reveilles-moi mardi à 6 heures dans la Chambre
+	- _Si vous êtes dans le Salon..._
 
-**A noter** que "après-demain" ne fonctionne pas, dites un jour de la semaine. 
+**A noter**:
+- La programmation se fait sur **6 jours maximum**, Avatar vous dira si vous dépassez la date maximum.
+- Il peut arriver, suivant le jour de la semaine, que la date comprise soit antérieure à celle du jour, dites alors "prochain" avec le jour pour faciliter la compréhension, par exemple:
+	- Reveilles-moi à 6 heures mardi prochain
+- "Après-demain" ne fonctionne pas, dites une date ou un jour de la semaine. 
 
 Les règles d'alarmes sont créées dans la base de données du plugin `scenariz`, elles restent activent même si le serveur redémarre.
 

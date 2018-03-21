@@ -152,12 +152,21 @@ var start = function (speakOnClient, client, time, type, sound, addspeech) {
 		minutes =  minutes.length == 1 ? '0' + minutes : minutes;
 		var timerTime = time.getFullYear()+'-'+month+'-'+day+'T'+hour+':'+minutes;
 		
+		// Date avant aujourd'hui
 		if (moment(timerTime).isAfter(currentDate) == false) {
 			return Avatar.speak("J'ai compris une date antérieure à aujourd'hui, essaye avec prochain dans la phrase. Mercredi prochain, par exemple.", speakOnClient, function () { 
 					var clientSocket = Avatar.Socket.getClientSocket(speakOnClient);
 					if (clientSocket)
 							clientSocket.emit('listen_again');
 				});
+		}
+		
+		// 6 jours maxi pour scenariz - 1 semaine max
+		var maxDate = moment(currentDate).add(6, 'days').format("YYYY-MM-DDTHH:mm");
+		if (moment(timerTime).isAfter(maxDate) == true) {
+			return Avatar.speak("Désolé, je ne peux pas programmer une date à plus de 6 jours", speakOnClient, function () { 
+				Avatar.Speech.end(speakOnClient); 
+			});
 		}
 		
 		hour = moment(timerTime).format('HH:mm');
