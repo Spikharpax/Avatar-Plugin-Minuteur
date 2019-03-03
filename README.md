@@ -255,5 +255,8 @@ Toutes ces règles peuvent être modifiées, vous pouvez aussi en ajouter...
  
 
 ## Versions
+Version 1.1 (03/03/2019)
+- Update mineur pour la fonction Play sound redirigée vers le plug-in SonosPlayer
+
 Version 1.0 
 - Version Released

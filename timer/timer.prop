@@ -3,11 +3,12 @@
 		"timer"  : {
 			"description": "minuteur, compte à rebours",
 			"exemples": "",
-			"version": "1.0",
+			"version": "1.1",
 			"NoXMLGrammar" : true,
 			"nlpPosition" : 3,
 			"addspeech" : true,
 			"default_sound" : "rencontre_du_troisieme_type.mp3",
+			"ttsPluginExport": "SonosPlayer",			
 			"lexic" : {
 				"alarm" : "une alarme",
 				"wake up": "un réveil",
